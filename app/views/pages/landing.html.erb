@@ -1,0 +1,15 @@
+<h1>Landing</h1>
+<table>
+  <thead>
+    <th>Name</th>
+    <th>Email</th>
+  </thead>
+  <tbody>
+    <% @students.each do |student| %>
+      <tr>
+        <td><%= student.name %></td>
+        <td><%= student.email %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
